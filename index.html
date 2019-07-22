@@ -1,0 +1,170 @@
+
+	<title>GQM+PA</title>
+<!DOCTYPE html>
+<html lang="en"><head>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="style.css" rel="stylesheet">
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Material para artigo</title>
+
+ 
+    
+  <script type="text/javascript">
+    jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 400);
+        $('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function(){
+
+            var topo = $('.jumbotron').height() + 81; // altura do topo
+            var scrollTop = $(window).scrollTop(); // qto foi rolado a barra
+            var tamPagina = $(document).height(); // altura da página
+            var larPagina = $(document).width(); // altura da página
+            var larguraMenu = $('#menu').width();
+
+            if((2 * larguraMenu) < larPagina){ //movimenta o menu apenas se o modo mobile não estiver ativo
+
+              if(scrollTop > topo){
+                  $('#menu').css({'width' : larguraMenu+'px', 'position' : 'absolute', 'z-index':'9','margin-top' : scrollTop - (topo-5)});
+              }else{
+                  $('#menu').css({'position' : 'relative', 'margin-top' : 0});
+              }               
+            }
+
+        });
+    });
+  </script>
+
+  </head>
+
+  <body id="topo">
+  	<p>
+
+    <div class="container">
+
+     
+        <p class="creditos" id="texto">Material de auxílio para o artigo</p>
+        <h3 id="gqm">GQM+PA: A Framework based on Goal-Question-Metric and Action Research for Teaching Software Measurement</h3>
+        <hr />
+        <p id="text">Por Saori Costa, Allysson Allex Araújo e Jerffeson Souza</p>
+      
+ <hr/> 
+
+      <div class="row">
+        <div class="col-lg-2">
+          
+  <div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#abstract" role="tab" aria-controls="v-pills-profile" aria-selected="false"  >Resumo</a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#questions" role="tab" aria-controls="v-pills-messages" aria-selected="false">Questionários</a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#questions" role="tab" aria-controls="v-pills-messages" aria-selected="false">Entrevista</a>
+      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#resultados" role="tab" aria-controls="v-pills-settings" aria-selected="false">Planilhas</a>
+    </div>
+  </div>
+ 
+</div>
+            
+        
+        </div>
+        <div class="col-lg-10">
+
+          <h2 id="abstract">1 - Resumo</h2>
+          <p>
+
+Software measurement demonstrates to be a crucial practice in
+software quality assurance, being intrinsically related to the evalu-
+ation of software metrics. However, the definition of which metrics
+should be evaluated in a software project is a complex task, thus
+requiring decision support methods. Among the usually addressed
+methods in software projects, one can highlight the Goal-Question-
+Metric (GQM) that aims to align the definition of metrics to the
+objectives of the organization. However, the understanding and
+execution of the processes that involve software measurement is
+closely linked to the level of qualification of the professional that
+performs it. Hence, there is a on-going challenge in teaching soft-
+ware measurement by aligning theory and practice in order to make
+the students well prepared professionally. Therefore, this work aims
+to propose a framework named as GQM+PA which is based upon
+the integration of the Action Research methodology to the GQM
+process. Regarding the empirical evaluation, we investigated th-
+rough a quali-quantitative perspective multiple case studies in the
+Núcleo de Práticas de Desenvolvimento de Software, headed at the
+Federal University of Ceará. Our major contributions may be sum-
+marized as follows: i) the proposal of an integrated framework for
+theoretical and practical learning of software measurement and ii)
+all routines, artifacts, dashboards and spreadsheets may be adapted
+by other projects as organizational assets.
+
+          </p>
+          <p><b>Keywords:</b> Software Quality, Software Measurement, GQM, Action Research,
+Software Teaching.
+          </p>
+          <hr/>
+         
+         <h2 id="questions">2 - Questionários </h2>
+          <p>
+               Download dos <a href="files/questionarios.zip">questionários </a>
+           </p> 
+           <hr/>  
+
+         
+         <h2 id="questions"> 3 - Entrevista </h2>
+          <p>
+               Download da <a href="files/entrevista.zip">síntese da entrevista </a>
+           </p> 
+           <hr/> 
+
+
+           <h2 id="resultados">4 - Planilhas</h2>
+               Download das  <a href="files/planilhas.zip" target="_blank"> planilhas </a>
+      <!-- Site footer -->
+ <hr/> 
+
+      <p>
+      <footer class="footer">
+        <p>Julho 2019 (última atualização: Julho 2019) </p>
+      </footer>
+
+    </div> 
+
+
+
+    <script src="index_arquivos/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>
